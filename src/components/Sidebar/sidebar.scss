@@ -65,4 +65,18 @@
             }
         }
     }
+
+    .bottom {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+
+        .colorOption {
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+            border: 1px solid #7451f9;
+            cursor: pointer;
+        }
+    }
 }
