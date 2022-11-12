@@ -69,14 +69,32 @@
     .bottom {
         display: flex;
         align-items: center;
+        justify-content: center;
         margin: 10px;
 
         .colorOption {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 20px;
             height: 20px;
+            margin-left: 10px;
+            padding: 10px;
             border-radius: 5px;
             border: 1px solid #7451f9;
             cursor: pointer;
+
+            &:nth-child(1) {
+                background-color: lightpink;
+            }
+
+            &:nth-child(2) {
+                background-color: lightcoral;
+            }
+
+            &:nth-child(3) {
+                background-color: palevioletred;
+            }
         }
     }
 }
