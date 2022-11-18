@@ -56,6 +56,31 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            .item {
+                text-align: center;
+
+                .itemTitle {
+                    font-size: 1.4rem;
+                    color: gray;
+                }
+
+                .itemResult {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 10px;
+                    font-size: 1.4rem;
+                    font-weight: 700;
+
+                    &.positive {
+                        color: green;
+                    }
+
+                    &.negative {
+                        color: red;
+                    }
+                }
+            }
         }
     }
 }

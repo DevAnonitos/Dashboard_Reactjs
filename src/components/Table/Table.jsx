@@ -3,7 +3,9 @@ import './table.scss'
 
 const Table = () => {
   return (
-    <div>Table</div>
+    <div className='table'>
+      Table
+    </div>
   )
 }
 
