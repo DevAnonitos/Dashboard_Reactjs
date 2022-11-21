@@ -2,6 +2,7 @@ import React from 'react';
 import './list.scss';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import Navbar from '../../components/Navbar/Navbar';
+import Datatable from '../../components/Datatable/Datatable';
 
 const List = () => {
   return (
@@ -9,7 +10,7 @@ const List = () => {
       <Sidebar />
       <div className="listContainer">
         <Navbar />
-        datatable
+        <Datatable />
       </div>
     </div>
   )
