@@ -1,6 +1,7 @@
 .datatable {
     height: 600px;
     padding: 20px;
+    font-size: 3rem;
     
     .datatableTitle{
         width: 100%;
@@ -10,14 +11,15 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        cursor: default;
   
         .link{
             text-decoration: none;
-            color: green;
+            color: #2ecc71;
             font-size: 1.8rem;
             font-weight: 400;
-            border: 1px solid green;
-            padding: 5px;
+            border: 1px solid #2ecc71;
+            padding: 10px;
             border-radius: 5px;
             cursor: pointer;
         }
@@ -42,17 +44,20 @@
   
         &.active {
             background-color: rgba(0, 128, 0, 0.05);
-            color: green;
+            color: #2ecc71;
+            font-weight: 600;
         }
 
         &.pending {
             background-color: rgba(255, 217, 0, 0.05);
-            color: goldenrod;
+            color: #f1c40f;
+            font-weight: 600;
         }
 
         &.passive {
             background-color: rgba(255, 0, 0, 0.05);
-            color: crimson;
+            color: #ff3838;
+            font-weight: 600;
         }
     }
   
@@ -64,17 +69,19 @@
         .viewButton {
             padding: 2px 5px;
             border-radius: 5px;
-            color: darkblue;
-            border: 1px dotted rgba(0, 0, 139, 0.596);
+            color: #D6A2E8;
+            border: 1px solid rgba(164, 91, 192, 0.596);
             cursor: pointer;
+            font-weight: 500;
         }
       
         .deleteButton {
             padding: 2px 5px;
             border-radius: 5px;
-            color: crimson;
-            border: 1px dotted rgba(220, 20, 60, 0.6);
+            color: #EA2027;
+            border: 1px solid rgba(247, 22, 75, 0.687);
             cursor: pointer;
+            font-weight: 500;
         }
     }
 }
