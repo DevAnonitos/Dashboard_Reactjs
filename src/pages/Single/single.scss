@@ -41,6 +41,28 @@
                         border-radius: 50%;
                         object-fit: cover;
                     }
+
+                    .details {
+                        .itemTitle {
+                            margin-bottom: 12px;
+                            color: #555;
+                        }
+
+                        .detailItem {
+                            margin-bottom: 12px;
+                            font-size: 1.6rem;
+
+                            .itemKey {
+                                font-weight: 600;
+                                color: #636e72;
+                                margin-right: 12px;
+                            }
+
+                            .itemValue {
+                                font-weight: 400;
+                            }
+                        }
+                    }
                 }
             }
 

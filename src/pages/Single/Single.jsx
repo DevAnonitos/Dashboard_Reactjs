@@ -15,7 +15,25 @@ const Single = () => {
             <h1 className="title">Information</h1>
             <div className="item">
               <img src="https://images.pexels.com/photos/3709094/pexels-photo-3709094.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Logo" className='itemImg' />
-              Details
+              <div className="details">
+                <h1 className="itemTitle">MooGose</h1>
+                <div className="detailItem">
+                  <span className="itemKey">Email:</span>
+                  <span className="itemValue">MooGosedb@gmail.com</span>
+                </div>
+                <div className="detailItem">
+                  <span className="itemKey">Phone:</span>
+                  <span className="itemValue">+84 981123419</span>
+                </div>
+                <div className="detailItem">
+                  <span className="itemKey">Address:</span>
+                  <span className="itemValue">St.419 Forallnight Yd.VietNam</span>
+                </div>
+                <div className="detailItem">
+                  <span className="itemKey">Country:</span>
+                  <span className="itemValue">VietNam</span>
+                </div>
+              </div>
             </div>
           </div>
           <div className="right">

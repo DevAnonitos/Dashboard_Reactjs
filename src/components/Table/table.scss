@@ -1,9 +1,11 @@
 .table {
     .table {
+      font-size: 2.2rem;
         .cellWrapper {
           display: flex;
           align-items: center;
-      
+          font-size: 2.2rem;
+
           .image {
             width: 32px;
             height: 32px;
@@ -16,15 +18,16 @@
         .status {
           padding: 5px;
           border-radius: 5px;
+          cursor: pointer;
       
             &.Approved {
-                color: green;
-                background-color: rgba(0, 128, 0, 0.151);
+                color: #7bed9f;
+                background-color: rgba(114, 255, 114, 0.151);
             }
             
             &.Pending {
-                color: goldenrod;
-                background-color: rgba(189, 189, 3, 0.103);
+                color: #eccc68;
+                background-color: rgba(240, 240, 147, 0.103);
             }
         }
     }
