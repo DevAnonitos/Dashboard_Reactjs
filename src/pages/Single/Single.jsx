@@ -1,6 +1,8 @@
-import React from 'react'
-import Navbar from '../../components/Navbar/Navbar'
-import Sidebar from '../../components/Sidebar/Sidebar'
+import React from 'react';
+import Bannerview from '../../components/Accordion/Bannerview';
+import Navbar from '../../components/Navbar/Navbar';
+import Sidebar from '../../components/Sidebar/Sidebar';
+import List from '../../components/Table/Table';
 import './single.scss'
 
 const Single = () => {
@@ -37,11 +39,12 @@ const Single = () => {
             </div>
           </div>
           <div className="right">
-
+            <Bannerview />
           </div>
         </div>
         <div className="bottom">
-
+          <h1 className="title">Last transaction</h1>
+          <List />
         </div>
       </div>
     </div>
