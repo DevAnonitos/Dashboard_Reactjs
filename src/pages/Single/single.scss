@@ -16,6 +16,19 @@
                 -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
                 box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
                 padding: 20px;
+                position: relative;
+
+                .editButton {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding: 10px;
+                    font-size: 1.8rem;
+                    color: #B33771;
+                    background-color: #7551f818;
+                    cursor: pointer;
+                    border-radius: 0 5px 0 5px;
+                }
 
                 .item {
                     display: flex;

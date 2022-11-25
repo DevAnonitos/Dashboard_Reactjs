@@ -11,6 +11,7 @@ const Single = () => {
         <Navbar />
         <div className="top">
           <div className="left">
+            <div className="editButton">Edit</div>
             <h1 className="title">Information</h1>
             <div className="item">
               <img src="https://images.pexels.com/photos/3709094/pexels-photo-3709094.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Logo" className='itemImg' />
