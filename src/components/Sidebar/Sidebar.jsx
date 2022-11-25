@@ -1,5 +1,5 @@
-import React from 'react'
-import './sidebar.scss'
+import React from 'react';
+import './sidebar.scss';
 
 // components
 import  DashboardIcon from '@mui/icons-material/Dashboard';

@@ -1,5 +1,6 @@
-import React from 'react'
-import './navbar.scss'
+import React from 'react';
+import './navbar.scss';
+// MUI components
 import SearchIcon from '@mui/icons-material/Search';
 import LanguageIcon from '@mui/icons-material/Language';
 import DarkModeIcon from '@mui/icons-material/DarkMode';

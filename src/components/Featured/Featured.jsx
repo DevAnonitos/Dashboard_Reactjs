@@ -1,5 +1,6 @@
-import React from 'react'
-import './featured.scss'
+import React from 'react';
+import './featured.scss';
+// MUI components
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
