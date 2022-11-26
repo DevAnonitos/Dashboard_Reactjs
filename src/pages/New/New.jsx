@@ -14,10 +14,10 @@ const New = () => {
         </div>
         <div className="bottom">
           <div className="left">
-
+            left
           </div>
           <div className="right">
-            
+            right
           </div>
         </div>
       </div>
