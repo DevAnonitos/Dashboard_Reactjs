@@ -34,6 +34,12 @@
 
             .right {
                 flex: 2;
+
+                form {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                }
             }
         }
     }
