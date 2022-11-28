@@ -11,6 +11,7 @@
         }
 
         .top, .bottom {
+            border-radius: 10px;
             -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
             box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
             padding: 10px;
@@ -38,7 +39,53 @@
                 form {
                     display: flex;
                     flex-wrap: wrap;
-                    gap: 20px;
+                    gap: 30px;
+                    justify-content: space-around;
+
+                    .formInput {
+                        width: 40%;
+
+                        label {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            font-size: 1.8rem;
+                            margin-bottom: 5px;
+                            color: #FD7272;
+                            font-weight: 600;
+                            text-transform: uppercase;
+
+                            .icon {
+                                cursor: pointer;
+                                font-size: 2.6rem;
+                                color: #B33771;
+                            }
+                        }
+
+                        input {
+                            width: 100%;
+                            padding: 5px;
+                            font-size: 1.8rem;
+                            border: none;
+                            border-bottom: 1px solid #a4b0be;
+                            outline: none;
+                        }
+                    }
+
+                    .btn-send {
+                        width: 150px;
+                        padding: 10px;
+                        background-color: #58B19F;
+                        color: #fff;
+                        border: none;
+                        outline: none;
+                        font-size: 1.6rem;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        border-radius: 5px;
+                        margin-top: 10px;
+                        cursor: pointer;
+                    }
                 }
             }
         }
