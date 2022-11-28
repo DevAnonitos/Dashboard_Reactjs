@@ -1,21 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './new.scss';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import Navbar from '../../components/Navbar/Navbar'
 import DriveFolderUploadIcon from '@mui/icons-material/DriveFolderUpload';
 
-const New = () => {
+const New = ({inputs, title}) => {
+
+  const [file, setFile] = useState("");
+
   return (
     <div className='new'>
       <Sidebar />
       <div className="newContainer">
         <Navbar />
         <div className="top">
-          <h1>Add new Users</h1>
+          <h1>{title}</h1>
         </div>
         <div className="bottom">
           <div className="left">
-            <img src="https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg" alt="Logo" className='img-add' />
+          <img
+              src={
+                file
+                  ? URL.createObjectURL(file)
+                  : "https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg"
+              }
+              alt="Logo"
+              className='img-add' 
+            />
           </div>
           <div className="right">
             <form>
@@ -23,7 +34,12 @@ const New = () => {
                 <label htmlFor='file'>
                   Image: <DriveFolderUploadIcon className='icon' />
                 </label>
-                <input type="file" id='file' style={{display: 'none'}}/>
+                <input
+                  type="file"
+                  id="file"
+                  onChange={(e) => setFile(e.target.files[0])}
+                  style={{ display: "none" }}
+                />
               </div>
               <div className="formInput">
                 <label>Username</label>

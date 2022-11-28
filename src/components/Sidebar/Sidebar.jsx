@@ -15,12 +15,16 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import PortraitIcon from '@mui/icons-material/Portrait';
 import LogoutIcon from '@mui/icons-material/Logout';
 
+import { Link } from "react-router-dom";
+
 const Sidebar = () => {
   return (
     <div className='sidebar'>
-      <div className='top'>
-        <span className='logo'>Baodmin</span>
-      </div>
+      <Link to='/' style={{textDecoration: 'none'}}>
+        <div className='top'>
+          <span className='logo'>Baodmin</span>
+        </div>
+      </Link>
       <hr />
       <div className='center'>
         <ul>
