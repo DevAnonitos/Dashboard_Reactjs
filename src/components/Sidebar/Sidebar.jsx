@@ -34,14 +34,18 @@ const Sidebar = () => {
             <span>Dashboard</span>
           </li>
           <p className="title">LISTS</p>
-          <li>
-            <PersonIcon className='icons' />
-            <span>Users</span>
-          </li>
-          <li>
-            <StoreIcon className='icons' />
-            <span>Products</span>
-          </li>
+          <Link to='/users' style={{textDecoration: 'none'}}>
+            <li>
+              <PersonIcon className='icons' />
+              <span>Users</span>
+            </li>
+          </Link>
+          <Link to='/products' style={{textDecoration: 'none'}}>
+            <li>
+              <StoreIcon className='icons' />
+              <span>Products</span>
+            </li>
+          </Link>
           <li>
             <CreditCardIcon className='icons' />
             <span>Orders</span>

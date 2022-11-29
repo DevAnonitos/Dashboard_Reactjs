@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
 import List from './pages/List/List';
@@ -6,6 +6,9 @@ import Single from './pages/Single/Single';
 import New from './pages/New/New'
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import { productInputs, userInputs } from './formSource';
+import "./style/dark.scss";
+import { useContext } from "react";
+import { DarkModeContext } from "./context/darkModeContext";
 
 
 console.info(
@@ -23,8 +26,9 @@ for (var i = 1; i <= 1e6; i++) {
 console.timeEnd("concatenation");
 
 function App() {
+
   return (
-    <div className="App">
+    <div className='app'>
       <BrowserRouter>
         <Routes>
           <Route path='/'>
